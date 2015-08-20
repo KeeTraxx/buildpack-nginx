@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-if [[ -f $1/.static ]]; then
+if [[ -f $1/.static ]] || [[ -f $1/index.html ]]; then
   echo ".static"
   exit 0
 else
